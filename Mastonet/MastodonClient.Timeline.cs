@@ -202,13 +202,13 @@ namespace Mastonet
             return new TimelineStreaming(url, AuthToken.AccessToken);
         }
 
-		public TimelineStreaming GetLocalStreaming()
-		{
-			string url = "https://" + StreamingApiUrl + "api/v1/streaming/public/local";
+        public TimelineStreaming GetLocalStreaming()
+        {
+            string url = "https://" + StreamingApiUrl + "api/v1/streaming/public/local";
 
-			return new TimelineStreaming(url, AuthToken.AccessToken);
-		}
+            return new TimelineStreaming(url, AuthToken.AccessToken);
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }
