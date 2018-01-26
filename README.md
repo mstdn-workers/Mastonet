@@ -1,3 +1,13 @@
+※本家Mastonetとの差分
+■ローカルタイムラインのストリーム取得機能の追加
+GetLocalStreaming()メソッドを使用しローカルタイムラインをストリームで取得可能。
+使い方はGetPublicStreaming()と同様。
+
+■deleteイベント発生時のバグ修正
+本家Mastonetではdeleteイベントの処理が不適切であったため修正。
+
+その他の機能・仕様は本家Mastonetから改変なし。
+
 # Masto.NET
 
 ![Build status](https://glacasa.visualstudio.com/_apis/public/build/definitions/b2cc08b3-5c47-4294-b016-434c80d4059c/43/badge)
