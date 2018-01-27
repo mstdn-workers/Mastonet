@@ -1,12 +1,12 @@
-※本家Mastonetとの差分
-■ローカルタイムラインのストリーム取得機能の追加
-GetLocalStreaming()メソッドを使用しローカルタイムラインをストリームで取得可能。
-使い方はGetPublicStreaming()と同様。
+※本家Mastonetとの差分  
+■ローカルタイムラインのストリーム取得機能の追加  
+GetLocalStreaming()メソッドを使用しローカルタイムラインをストリームで取得可能。  
+使い方はGetPublicStreaming()と同様。  
 
-■deleteイベント発生時のバグ修正
-本家Mastonetではdeleteイベントの処理が不適切であったため修正。
+■deleteイベント発生時のバグ修正  
+本家Mastonetではdeleteイベントの処理が不適切であったため修正。  
 
-その他の機能・仕様は本家Mastonetから改変なし。
+その他の機能・仕様は本家Mastonetから改変なし。  
 
 # Masto.NET
 
