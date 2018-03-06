@@ -15,12 +15,12 @@ namespace Mastonet
         private string accessToken;
         private HttpClient client;
 
-
         public event EventHandler<StreamUpdateEventArgs> OnUpdate;
         public event EventHandler<StreamNotificationEventArgs> OnNotification;
         public event EventHandler<StreamDeleteEventArgs> OnDelete;
+		public event EventHandler<StreamHeartbeatEventArgs> OnHeartbeat;
 
-        internal TimelineStreaming(string url, string accessToken)
+		internal TimelineStreaming(string url, string accessToken)
         {
             this.url = url;
             this.accessToken = accessToken;
@@ -47,6 +47,7 @@ namespace Mastonet
                 if (string.IsNullOrEmpty(line) || line.StartsWith(":"))
                 {
                     eventName = data = null;
+                    OnHeartbeat?.Invoke(this, new StreamHeartbeatEventArgs() { DateTime = DateTime.Now });
                     continue;
                 }
 

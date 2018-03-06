@@ -19,4 +19,9 @@ namespace Mastonet
     {
         public long StatusId { get; set; }
     }
+
+	public class StreamHeartbeatEventArgs : EventArgs
+	{
+		public DateTime DateTime { get; set; }
+	}
 }
